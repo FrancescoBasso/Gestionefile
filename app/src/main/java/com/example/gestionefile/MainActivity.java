@@ -41,11 +41,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Context c = getApplicationContext();
                 //String percorso = c.getPackageCodePath();
-                String risultato = gest.leggiFile("filedaleggere.txt",getApplicationContext());
-                Toast.makeText(getApplicationContext(),risultato,Toast.LENGTH_LONG).show();
+               //String risultato = gest.leggiFile("filedaleggere.txt",getApplicationContext());
+                String righelette = gest.leggiFileRaw(getApplicationContext());
+                Toast.makeText(getApplicationContext(),righelette,Toast.LENGTH_LONG).show();
+
 
             }
         });
+        //bottone leggi
 
         btnScrivi.setOnClickListener(new View.OnClickListener() {
             @Override
