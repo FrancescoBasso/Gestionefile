@@ -1,6 +1,7 @@
 package com.example.gestionefile;
 
 import android.content.Context;
+import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.util.Log;
 
@@ -111,6 +112,11 @@ public class GestoreMetodi {
         }
 
         return sb.toString();
+    }
+
+    public String leggiFileAssets(){
+        AssetManager am = c.getAssets();
+        InputStream is = am.open("Lyrics.txt");
     }
 
 }

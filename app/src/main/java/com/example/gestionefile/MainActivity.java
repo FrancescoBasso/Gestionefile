@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
         //bottone leggi
 
         btnScrivi.setOnClickListener(new View.OnClickListener() {
